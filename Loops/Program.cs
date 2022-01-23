@@ -16,13 +16,37 @@ namespace Loops
             //WhileLoop();
 
 
-            int number = 10;
-            do
-            {
-                Console.WriteLine(number);
-                number--;
+            //DoWhileLoop();
 
-            } while (number>=11);
+
+            if (IsPrimeNumber(7))
+            {
+                Console.WriteLine("This is a prime number");
+            }
+            else
+            {
+                Console.WriteLine("not prime number");
+            }
+
+
+
+            bool IsPrimeNumber(int number)
+            {
+
+                bool result = true;
+
+                for (int i = 2; i <number-1; i++)
+                {
+                    if (number%i==0)
+                    {
+                        result= false;
+                        i = number;
+                    }
+                }
+                return result;
+
+
+            }
 
 
 
@@ -38,6 +62,17 @@ namespace Loops
 
 
             Console.ReadLine();
+        }
+
+        private static void DoWhileLoop()
+        {
+            int number = 10;
+            do
+            {
+                Console.WriteLine(number);
+                number--;
+
+            } while (number >= 11);
         }
 
         private static void WhileLoop()
