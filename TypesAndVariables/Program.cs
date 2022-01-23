@@ -40,6 +40,8 @@ namespace TypesAndVariables
             double number5 = 10.4;
             Console.WriteLine(number5);
 
+            decimal number6 = 112121255.54555m;
+            Console.WriteLine(number6);
 
 
 
