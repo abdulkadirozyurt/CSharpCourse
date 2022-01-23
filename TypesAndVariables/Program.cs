@@ -32,7 +32,11 @@ namespace TypesAndVariables
 
             
             
-            bool number5 = false;
+            bool condition = false;
+
+
+            char character= 'a'; // atama için tek tırnak.
+
 
 
 
