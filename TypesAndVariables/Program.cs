@@ -19,7 +19,24 @@ namespace TypesAndVariables
 
             long number2 = 5464684684684684;
             Console.WriteLine(number2);
-            
+
+
+            short number3 = -32767;
+
+            Console.WriteLine( number3);
+
+
+
+
+
+
+
+
+
+
+
+
+
             //Console.WriteLine("Hello World");
 
             Console.ReadLine();
