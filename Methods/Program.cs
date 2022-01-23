@@ -16,6 +16,9 @@ namespace Methods
             Add();
 
 
+            int result= Add2(3,5);
+            Console.WriteLine(result);
+            
             Console.ReadLine();
         }
 
@@ -27,7 +30,13 @@ namespace Methods
             Console.WriteLine("Added!!!");
         }
 
+        static int Add2(int number1,int number2) // mesaj vermek yerine gerçekten toplama yapıyoruz şimdi. Parametre vermeliyiz.
+        {
+            int sonuc=number1 + number2;
+            
+            return sonuc;
 
+        }
 
 
 

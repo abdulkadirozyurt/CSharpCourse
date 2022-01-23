@@ -11,7 +11,7 @@ namespace WorkWithConditionBlocks
         static void Main(string[] args)
         {
 
-            var number = 11;
+            //var number = 11;
 
             //if (number == 10)
             //{
