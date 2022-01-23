@@ -30,6 +30,10 @@ namespace TypesAndVariables
             byte number4 = 255;
             Console.WriteLine(number4);
 
+            
+            
+            bool number5 = false;
+
 
 
 
