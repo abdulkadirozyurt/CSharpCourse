@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Methods
 {
-   class Program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -22,10 +22,10 @@ namespace Methods
 
             int number1 = 20;
             int number2 = 100;
-            var result2= Add3(ref number1,number2);
+            var result2 = Add3(ref number1, number2);
 
             Console.WriteLine(result2);
-            Console.WriteLine( number1);
+            Console.WriteLine(number1);
 
 
             Console.ReadLine();
@@ -39,10 +39,10 @@ namespace Methods
             Console.WriteLine("Added!!!");
         }
 
-        static int Add2(int number1=10,int number2=55) // default değer number 2 için 30. mesaj vermek yerine gerçekten toplama yapıyoruz şimdi. Parametre vermeliyiz.
+        static int Add2(int number1 = 10, int number2 = 55) // default değer number 2 için 30. mesaj vermek yerine gerçekten toplama yapıyoruz şimdi. Parametre vermeliyiz.
         {
-            int sonuc=number1 + number2;
-            
+            int sonuc = number1 + number2;
+
             return sonuc;
 
         }
