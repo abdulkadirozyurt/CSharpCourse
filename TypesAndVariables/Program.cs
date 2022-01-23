@@ -11,7 +11,15 @@ namespace TypesAndVariables
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hello Word");
+            // Value Types 
+
+            int number1 =10;
+            Console.WriteLine("number1 is {0}",number1); // virgülden sonraki ilk değeri yazacak.
+            
+            
+            
+            
+            //Console.WriteLine("Hello World");
 
             Console.ReadLine();
 
