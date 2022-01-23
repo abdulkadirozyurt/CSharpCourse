@@ -17,11 +17,8 @@ namespace TypesAndVariables
             Console.WriteLine("number1 is {0}",number1); // virgülden sonraki ilk değeri yazacak.
 
 
-
-            Console.WriteLine("--------");
-
-            long number2 = 21474836472;
-            Console.WriteLine(  number2);
+            long number2 = 5464684684684684;
+            Console.WriteLine(number2);
             
             //Console.WriteLine("Hello World");
 
