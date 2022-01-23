@@ -45,6 +45,10 @@ namespace TypesAndVariables
 
 
 
+            var number7 = 10;
+            number7 = 'A';
+            Console.WriteLine(number7);
+
             
 
 
