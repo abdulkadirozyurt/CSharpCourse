@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WorkWithConditionBlocks
+namespace WorkWithSingleLineIf
 {
     class Program
     {
@@ -13,17 +13,7 @@ namespace WorkWithConditionBlocks
 
             var number = 11;
 
-            if (number==10)
-            {
-                Console.WriteLine("number is 10");
-            }
-            else
-            {
-                Console.WriteLine("number is not 10");
-
-            }
-
-
+            Console.WriteLine(number==10? "Number is 10":"Number is not 10");
 
 
 
