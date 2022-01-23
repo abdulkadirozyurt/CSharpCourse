@@ -37,7 +37,8 @@ namespace TypesAndVariables
 
             char character= 'a'; // atama için tek tırnak.
 
-
+            double number5 = 10.4;
+            Console.WriteLine(number5);
 
 
 
