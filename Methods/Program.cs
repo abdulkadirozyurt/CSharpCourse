@@ -30,13 +30,15 @@ namespace Methods
             Console.WriteLine("Added!!!");
         }
 
-        static int Add2(int number1,int number2) // mesaj vermek yerine gerçekten toplama yapıyoruz şimdi. Parametre vermeliyiz.
+        static int Add2(int number1=10,int number2=55) // default değer number 2 için 30. mesaj vermek yerine gerçekten toplama yapıyoruz şimdi. Parametre vermeliyiz.
         {
             int sonuc=number1 + number2;
             
             return sonuc;
 
         }
+
+
 
 
 
