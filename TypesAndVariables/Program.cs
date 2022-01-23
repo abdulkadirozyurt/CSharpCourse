@@ -27,6 +27,11 @@ namespace TypesAndVariables
 
 
 
+            byte number4 = 255;
+            Console.WriteLine(number4);
+
+
+
 
 
 
