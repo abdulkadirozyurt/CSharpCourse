@@ -28,7 +28,7 @@ namespace Strings
 
 
 
-            var result5 = sentence.IndexOf("name"); // name, kaçıncı karakterden başladığını onu bulur.
+            var result5 = sentence.IndexOf("name"); // name, kaçıncı karakterden başladığını onu bulur. Bulamazsa -1 döndürür.
             Console.WriteLine(result5);
 
 
