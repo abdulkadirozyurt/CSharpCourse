@@ -18,9 +18,28 @@ namespace IntroductionOfClasses
             customerManager.Add();
             customerManager.Update();
 
+            Console.WriteLine("-----------");
 
+            Customer customer = new Customer();
+            customer.Id = 564124525;
+            customer.FirstName = "Abdulkadir";
+            customer.LastName = "Özyurt";
 
+            Console.WriteLine(customer.FirstName);
+            Console.WriteLine(customer.LastName);
+            Console.WriteLine(customer.Id);
 
+            Console.WriteLine("----------");
+            // farklı bir yazım şekliyle aşağıda yazalım.
+
+            Customer customer2 = new Customer
+            {
+                Id = 2, City = "İstanbul", FirstName = "Abdulkadir",LastName = "Özyurt"
+
+            };
+
+            Console.WriteLine(customer2.Id+" "+customer2.City+" "+customer2.FirstName+" "+customer2.LastName);
+            
 
 
 
@@ -40,7 +59,7 @@ namespace IntroductionOfClasses
             {
 
                 Console.WriteLine("Customer Added");
-           
+
             }
 
 
