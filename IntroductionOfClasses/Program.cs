@@ -30,11 +30,20 @@ namespace IntroductionOfClasses
             Console.WriteLine(customer.Id);
 
             Console.WriteLine("----------");
+           
+            
+            
             // farklı bir yazım şekliyle aşağıda yazalım.
 
-            Customer customer2 = new Customer
+
+
+            Customer customer2 = new Customer // burada parantez açmak yerine küme paranteziyle devam ettik.
+
             {
-                Id = 2, City = "İstanbul", FirstName = "Abdulkadir",LastName = "Özyurt"
+                Id = 2,
+                City = "İstanbul",
+                FirstName = "Abdulkadir",
+                LastName = "Özyurt"
 
             };
 
@@ -55,6 +64,10 @@ namespace IntroductionOfClasses
 
         class CustomerManager
         {
+           
+
+
+            
             public void Add()
             {
 
@@ -67,6 +80,11 @@ namespace IntroductionOfClasses
             {
                 Console.WriteLine("Customer Updated");
             }
+
+
+
+
+
 
 
 

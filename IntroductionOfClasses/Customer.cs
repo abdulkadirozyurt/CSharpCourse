@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntroductionOfClasses
 {
-    class Customer   // müşterinin özelliğini tutmak için prop kullanırız
+    class Customer   // müşterinin özelliğini tutmak için prop kullanırız property ---> özellik tutar.
     {
 
         public int Id { get; set; }
