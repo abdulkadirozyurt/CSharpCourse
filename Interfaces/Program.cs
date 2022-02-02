@@ -11,6 +11,50 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
+            //InterfacesIntro();
+
+            // bir interface hiçbir zaman new lenemez çünkü tek başına bir anlamı yoktur.
+
+
+            //Demo();
+
+
+
+            // Bir verimiz var ve bu veriyi şirketin hem oracle hem de sql veritabanına yazmak istiyoruz.
+            // ICustomerDal'ı bir array haline getiriyoruz.
+
+            ICustomerDal[] customerDals = new ICustomerDal[2]
+            {
+                new SqlServerCustomerDal(),
+                new OracleCustomerDal()
+            };
+
+            foreach (var customerDal in customerDals)
+            {
+                customerDal.Add();
+                
+            }
+            
+
+
+
+
+
+
+
+
+            Console.ReadLine();
+        }
+
+        private static void Demo()
+        {
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
+            customerManager.Add(new SqlServerCustomerDal());
+        }
+
+        private static void InterfacesIntro()
+        {
             PersonManager manager = new PersonManager();
 
             //manager.Add(new Customer { Id = 61, FirstName = "Abdulkadir", LastName = "Özyurt", Address = "Sakarya" });
@@ -70,13 +114,7 @@ namespace Interfaces
              
              
              */
-
-
-
-            Console.ReadLine();
         }
-
-
     }
 }
 
@@ -123,7 +161,7 @@ class PersonManager
 
         Console.WriteLine(person.LastName);
         Console.WriteLine(person.Id);
-        
+
 
     }
 
