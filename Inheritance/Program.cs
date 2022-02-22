@@ -29,20 +29,20 @@ namespace Inheritance  // Kalıtım, miras
                     Id=61,
 
                 }
-
-                
             };
 
-            foreach (var person in persons)
+            
+
+
+            foreach (Person person in persons)
             {
                 Console.WriteLine(person.FirstName);
                 Console.WriteLine(person.LastName);
                 Console.WriteLine(person.Id);
                 
-                
+
             }
 
-            
             
         }
             
@@ -54,13 +54,14 @@ namespace Inheritance  // Kalıtım, miras
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        
 
     }
 
-    class Person2
-    {
+    //class Person2
+    //{
 
-    }
+    //}
 
 
     // hem Person hem de Person2 yazamayız ----> bir kişinin bir tane babası olur çünkü.
