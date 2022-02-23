@@ -51,8 +51,9 @@ namespace ReferenceTypes
 
 
             Employee employee = new Employee();
+            employee.FirstName = "Veli";
+            // customer = employee;   //biri customer biri employee türünde. atanamaz.
 
-            // customer = employee;   //biri customer bici employee türünde. atanamaz.
 
             Person person3 = customer;  // miras aldığımız sınıf türüne mirası alan türünde bir şeyi atayabiliriz.
             customer.FirstName = "Ahmet";
@@ -60,12 +61,12 @@ namespace ReferenceTypes
 
             Console.WriteLine(customer.FirstName);
             Console.WriteLine(((Customer)person3).CreditCardNumber);
+                              // boxing
 
 
-
-
-
-           
+          
+            PersonManager personManager = new PersonManager();
+            personManager.Add(employee);
 
 
 
@@ -83,7 +84,7 @@ namespace ReferenceTypes
     }
 
 
-    // base class : Person        base clası inherit eden class lara onun referansını (adresini) atayabiliriz.
+    // base class : Person   (ebeveyn)    base clası inherit eden class lara onun referansını (adresini) atayabiliriz.
 
     class Customer : Person  // inheritance yaptık.
     {
@@ -93,6 +94,14 @@ namespace ReferenceTypes
     class Employee : Person
     {
         public int Employeenumber { get; set; }
+    }
+
+    class PersonManager
+    {
+        public void Add(Person person)
+        {
+            Console.WriteLine(person.FirstName);
+        }
     }
 }
 
