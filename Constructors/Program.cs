@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Constructors   // constructor ---> bir class ı newlediğimiz zaman bir kez çalışır ve bir daha çalışmaz.
+namespace Constructors   // constructor ---> bir class'ı newlediğimiz zaman bir kez çalışır ve bir daha çalışmaz.
 {
     internal class Program
     {
@@ -22,7 +22,7 @@ namespace Constructors   // constructor ---> bir class ı newlediğimiz zaman bi
 
         }
 
-        public Customer(int id, string firstName, string lastName, string city)         // -----> constructor yapısı
+        public Customer(int id, string firstName, string lastName, string city)         // -----> constructor yapısı      customer2 kısmını bu şekilde yazarız.
         {
             FirsName = firstName;
             LastName = lastName;
