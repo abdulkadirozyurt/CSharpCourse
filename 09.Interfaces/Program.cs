@@ -8,7 +8,17 @@ namespace _09.Interfaces
         {
             // InterafacesIntro();
 
-            
+            ICustomerDal[] customerDals = new ICustomerDal[2]
+            {
+                new SqlServerCustomerDal(),
+                new OracleCustomerDal()
+            };
+
+            foreach (var customerDal in customerDals)
+            {
+                customerDal.Add();
+            }
+
         }
 
         private static void InterafacesIntro()
