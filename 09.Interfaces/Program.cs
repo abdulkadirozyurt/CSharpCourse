@@ -6,6 +6,13 @@ namespace _09.Interfaces
     {
         static void Main(string[] args)
         {
+            // InterafacesIntro();
+
+            
+        }
+
+        private static void InterafacesIntro()
+        {
             PersonManager personManager = new PersonManager();
             Customer customer = new Customer
             {
