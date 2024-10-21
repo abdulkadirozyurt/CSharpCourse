@@ -33,11 +33,9 @@ namespace _04.Arrays
                 for (int j = 0; j <= regions.GetUpperBound(1); j++)
                 {
                     Console.Write(regions[i, j]+" ");
-
                 }
                 Console.WriteLine("\n--------------------------------------");
             }
-
         }
 
         static void SingleDimensionArrays()
