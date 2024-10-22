@@ -18,10 +18,6 @@ namespace _10.InterfacesDemo
                 worker.Work();
                 
             }
-
-
-
-
         }
     }
 
