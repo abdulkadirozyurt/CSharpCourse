@@ -38,8 +38,7 @@ namespace _15.Generics
 
             for(int i=0;i< _tempArray.Length; i++)
             {
-                // yedekteki elemanlar tek tek ana diziye aktarıldı
-                _array[i]=_tempArray[i];
+                _array[i] = _tempArray[i];          // yedekteki elemanlar tek tek ana diziye aktarıldı
             }
 
             // dizinin eleman sayısının bir eksiği olan indeksteki yani boş olan yere, yeni eklenen öğe koyuldu
