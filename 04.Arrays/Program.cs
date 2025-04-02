@@ -9,11 +9,23 @@ namespace _04.Arrays
             //SingleDimensionArrays();
 
             MultiDimensionArrays();
+        }
+        static void SingleDimensionArrays()
+        {
+            string[] students = new string[3];
 
+            students[0] = "John";
+            students[1] = "Mary";
+            students[2] = "Steve";
 
+            foreach (var item in students)
+            {
+                Console.WriteLine(item);
+            }
 
-
-
+            string[] students2 = new string[] { "Engin", "Derin", "Salih" };
+            string[] students3 = new[] { "Engin", "Derin", "Salih" };
+            string[] students4 = { "Engin", "Derin", "Salih" }; // array initialization type
         }
 
         static void MultiDimensionArrays()
@@ -32,27 +44,12 @@ namespace _04.Arrays
             {
                 for (int j = 0; j <= regions.GetUpperBound(1); j++)
                 {
-                    Console.Write(regions[i, j]+" ");
+                    Console.Write(regions[i, j] + " ");
                 }
                 Console.WriteLine("\n--------------------------------------");
             }
         }
 
-        static void SingleDimensionArrays()
-        {
-            string[] students = new string[3];
 
-            students[0] = "John";
-            students[1] = "Mary";
-            students[2] = "Steve";
-
-            foreach (var item in students)
-            {
-                Console.WriteLine(item);
-            }
-
-            string[] students2 = new string[] { "Engin", "Derin", "Salih" };
-            string[] students3 = { "Engin", "Derin", "Salih" }; // array initialization type
-        }
     }
 }
